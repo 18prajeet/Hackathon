@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What If Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>What If Calculator</h1>
+      <p>Discover the impact of your daily choices</p>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message">Hi! Choose a scenario below and tell me your number.</div>
+    </div>
+
+    <div class="chat-input">
+      <select id="scenario">
+        <option value="savings" data-unit="₹">Daily Savings</option>
+        <option value="calories" data-unit="minutes">Extra Walking</option>
+        <option value="carbon" data-unit="km">Carbon Saved</option>
+        <option value="screen" data-unit="hours">Screen Time Reduced</option>
+        <option value="water" data-unit="liters">Water Saved</option>
+        <option value="plastic" data-unit="bottles">Plastic Bottles Avoided</option>
+        <option value="sleep" data-unit="hours">Extra Sleep</option>
+        <option value="reading" data-unit="minutes">Reading Daily</option>
+        <option value="coffee" data-unit="cups">Coffee Cups Avoided</option>
+        <option value="junk" data-unit="packs">Junk Food Skipped</option>
+      </select>
+      <input type="number" id="inputValue" placeholder="Enter a value">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
